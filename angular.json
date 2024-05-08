@@ -55,12 +55,16 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "outputPath": "../../../public/assets/angular",
+              "deployUrl": "/assets/angular/"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "outputPath": "dist/assets/angular",
+              "baseHref": "/assets/angular/"
             }
           },
           "defaultConfiguration": "production"
@@ -104,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
